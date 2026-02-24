@@ -44,6 +44,6 @@ jobs:
             ghcr.io/runshine/secoclient:latest
             runshine0819/secoclient:${{ steps.date.outputs.date_tag }}
             ghcr.io/runshine/secoclient:${{ steps.date.outputs.date_tag }}
-          file: vpn-monitor/Dockerfile
+          file: Dockerfile
 
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 if [ "x${DISPLAY}" = "x" ];then
   Xvfb :1 -screen 0 1024x768x24 &

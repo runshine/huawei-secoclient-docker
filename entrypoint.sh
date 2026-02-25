@@ -2,6 +2,13 @@
 set -x
 
 if [ "x${DISPLAY}" = "x" ];then
+
+  if [ -f "/tmp/.X1-lock" ];then
+     sudo rm -rf "/tmp/.X1-lock"
+  fi
+  if [ -d "/tmp/.X11-unix" ];then
+     sudo rm -rf "/tmp/.X11-unix"
+  fi
   sudo Xvfb :1 -screen 0 1024x768x24 &
   export DISPLAY=:1
 fi

@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y procps \
    xcb \
    libfontconfig1 \
    libxrender1 \
-   libqt5gui5 xvfb \
+   libqt5gui5 xvfb iptables \
    sudo
 
 RUN export uid=1000 gid=1000 && \
